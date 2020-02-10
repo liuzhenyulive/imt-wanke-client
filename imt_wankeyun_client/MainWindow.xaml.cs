@@ -108,8 +108,8 @@ namespace imt_wankeyun_client
             tbk_ad_main.Visibility = Visibility.Hidden;
             tbk_updateInfo.Visibility = Visibility.Hidden;
 
-            AdTitleQuery();
-            AdTitle2Query();
+            //AdTitleQuery();
+            //AdTitle2Query();
             try
             {
                 tbk_version.Text = GetEdition();

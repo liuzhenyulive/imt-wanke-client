@@ -29,7 +29,7 @@ namespace imt_wankeyun_client.Helpers
         /// <summary>
         /// 模拟的app版本
         /// </summary>
-        static string appVersion = "1.6.2";
+        static string appVersion = "1.4.5.112";
         static string apiAccountUrl = "https://account.onethingpcs.com";
         static string apiControlUrl = "https://control.onethingpcs.com";
         static string apiRemoteDlUrl = "http://control-remotedl.onethingpcs.com";
@@ -330,8 +330,8 @@ namespace imt_wankeyun_client.Helpers
             var client = GetClient(phone);
             var data = new Dictionary<string, string>();
             data.Add("appversion", appVersion);
-            data.Add("v", "1");
-            data.Add("ct", "1");
+            data.Add("v", "8");
+            data.Add("ct", "5");
             var gstr = GetParams(client, data, true);
             var sessionid = GetCookie(client, apiAccountUrl, "sessionid");
             var userid = GetCookie(client, apiAccountUrl, "userid");
